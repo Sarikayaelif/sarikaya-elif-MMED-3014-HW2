@@ -4,7 +4,7 @@ namespace Traits;
 trait Run {
 
     /**
-     * you drink this thing
+     * A message for animals can run
      * 
      * @return string
      */

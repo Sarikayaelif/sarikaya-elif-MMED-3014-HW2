@@ -4,7 +4,7 @@ namespace Interfaces;
 interface Move 
 {
     /**
-     * An edible thing must be able to be eaten.
+     * move function was implemented in the Animal.php file.
      * 
      * @return string
      */

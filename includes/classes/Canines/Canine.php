@@ -13,7 +13,7 @@ class Canine extends \Animal
 
 
     /**
-     * A short message about chooseing this canine.
+     * the second message of eat function, belongs second layer, sub-class.
      * @return string
      */
     public function eat(): string 
@@ -22,12 +22,20 @@ class Canine extends \Animal
         return $parentResult; 
     }
 
+    /**
+     * the second message of drink function, belongs second layer, sub-class.
+     * @return string
+     */
     public function drink(): string 
     {
         $parentResult = parent::drink();
         return $parentResult; 
     }
 
+    /**
+     * the second message of speak function, belongs second layer, sub-class.
+     * @return string
+     */
     public function speak(): string 
     {
         $parentResult = parent::speak();

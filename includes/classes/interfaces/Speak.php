@@ -4,7 +4,7 @@ namespace Interfaces;
 interface Speak 
 {
     /**
-     * An edible thing must be able to be eaten.
+     * speak function was implemented in the Animal.php file.
      * 
      * @return string
      */
