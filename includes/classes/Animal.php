@@ -3,8 +3,9 @@
 use Interfaces\Eat;
 use Interfaces\Drink;
 use Interfaces\Speak;
+use Interfaces\Move;
 
-class Animal implements Eat, Drink, Speak
+class Animal implements Eat, Drink, Speak, Move
 {
     /**
      * @var string
@@ -23,11 +24,16 @@ class Animal implements Eat, Drink, Speak
 
     public function drink(): string 
     {
-        return "If you choose " . $this->name . ", I can tell you what " . $this->name . " drinks. ";
+        return  "Then, I can tell you what " . $this->name . " drinks. ";
     }
 
     public function speak(): string 
     {
-        return "If you choose " . $this->name . ", I can tell you which sound " . $this->name . " makes. ";
+        return "After that, I can tell you which sound " . $this->name . " makes. ";
+    }
+
+    public function move(): string 
+    {
+        return "Also, do you know how fast " . $this->name . " moves. ";
     }
 }

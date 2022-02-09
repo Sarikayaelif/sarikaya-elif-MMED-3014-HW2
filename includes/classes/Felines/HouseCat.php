@@ -23,4 +23,9 @@ class HouseCat extends Feline
         $parentResult = parent::speak();
         return $parentResult . " They meow.";
     }
+
+    public function howFast(): string 
+    {
+        return ' slower than the other felines.';
+    }
 }
