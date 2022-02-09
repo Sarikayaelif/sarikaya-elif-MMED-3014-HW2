@@ -7,6 +7,9 @@ class Lion extends Feline
 {
     use Run;
     
+     /**
+     * @var string
+     */
     protected $name = 'a lion';
 
     public function eat(): string {

@@ -9,7 +9,7 @@ class Bird extends \Animal { // \ is not optional here
     protected $name = 'a bird';
 
      /**
-     * A short message about eating this main dish.
+     * the second message of eat function, belongs second layer, sub-class.
      * @return string
      */
     public function eat(): string 
@@ -18,12 +18,20 @@ class Bird extends \Animal { // \ is not optional here
         return $parentResult; 
     }
 
+    /**
+     * the second message of drink function, belongs second layer, sub-class.
+     * @return string
+     */
     public function drink(): string 
     {
         $parentResult = parent::drink();
         return $parentResult; 
     }
 
+    /**
+     * the second message of speak function, belongs second layer, sub-class.
+     * @return string
+     */
     public function speak(): string 
     {
         $parentResult = parent::speak();

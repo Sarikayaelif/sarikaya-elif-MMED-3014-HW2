@@ -4,7 +4,7 @@ namespace Interfaces;
 interface Drink
 {
     /**
-     * An edible thing must be able to be eaten.
+     *  drink function was implemented in the Animal.php file.
      * 
      * @return string
      */
