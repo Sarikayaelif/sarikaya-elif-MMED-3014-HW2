@@ -2,7 +2,8 @@
 
 namespace Felines; 
 
-class Feline extends \Animal { // \ is not optional here
+class Feline extends \Animal // \ is not optional here
+{ 
     /**
      * @var string
      */
@@ -28,5 +29,17 @@ class Feline extends \Animal { // \ is not optional here
     {
         $parentResult = parent::speak();
         return $parentResult; 
+    }
+
+    public function move(): string 
+    {
+        $parentResult = parent::move();
+        $howFast = $this->howFast();
+        return $parentResult . "They move " . $howFast;
+    }   
+        
+    public function howFast(): string
+    {
+        return ' faster from many animals.';
     }
 }
